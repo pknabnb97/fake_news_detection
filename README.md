@@ -9,20 +9,3 @@ Following that, it has convolution layer with units having ReLU activation funct
 
 The model was then trained for 10 epochs with 99.98% accuracy on the training set and 96% accuracy on the test set.
 The loss function was set to ‘binary crossentrophy’ with Adam optimization function and a learning rate of 0.001.
-
-Model: "sequential"
-_________________________________________________________________
-Layer (type)                 Output Shape              Param #   
-=================================================================
-embedding (Embedding)        (None, 20849, 16)         160000    
-_________________________________________________________________
-conv1d (Conv1D)              (None, 20845, 16)         1296      
-_________________________________________________________________
-global_max_pooling1d (Global (None, 16)                0         
-_________________________________________________________________
-dense (Dense)                (None, 1)                 17        
-=================================================================
-Total params: 161,313
-Trainable params: 161,313
-Non-trainable params: 0
-_________________________________________________________________
